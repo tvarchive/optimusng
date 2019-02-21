@@ -1,0 +1,31 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  matchmaker:
+    image: optimuscloud/match-maker
+    ports:
+      - "6898:6898"
+
+  mdb:
+    image: optimuscloud/mdb
+    ports:
+      - "9099:9099"
+
+  akira:
+    image: optimuscloud/akira
+    ports:
+      - "6889:6889"
+    depends_on:
+      - redis
+      - rabbitmq
+      - matchmaker
