@@ -5,6 +5,11 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:15672"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
 
   redis:
     image: redis
@@ -25,7 +30,8 @@ services:
     image: optimuscloud/akira
     ports:
       - "6889:6889"
+    restart: always
     depends_on:
-      - redis
       - rabbitmq
+      - redis
       - matchmaker
