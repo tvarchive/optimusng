@@ -2,6 +2,7 @@ version: '3'
 services:
   rabbitmq:
     image: rabbitmq:3-management
+    restart: always
     ports:
       - "15672:15672"
       - "5672:5672"
@@ -16,13 +17,24 @@ services:
     ports:
       - "6379:6379"
 
+  redisCommander:
+    image: rediscommander/redis-commander
+    ports:
+      - "9081:8081"
+    environment: 
+      - REDIS_HOST=redis
+    depends_on: 
+      - redis
+
   matchmaker:
     image: optimuscloud/match-maker
+    restart: always
     ports:
       - "6898:6898"
 
   mdb:
     image: optimuscloud/mdb
+    restart: always
     ports:
       - "9099:9099"
 
@@ -31,6 +43,9 @@ services:
     ports:
       - "6889:6889"
     restart: always
+    environment: 
+      - REDIS_HOST=redis
+      - RABBITMQ_HOST=rabbitmq
     depends_on:
       - rabbitmq
       - redis
@@ -38,13 +53,29 @@ services:
 
   mongo:
     image: mongo
+    restart: always
+    environment: 
+      - MONGO_INITDB_DATABASE=${database}
     ports:
       - "27017:27017"
+
+  optimusUsers:
+    image: testvagrant/optimususers
+    restart: always
+    environment:
+      - DB_NAME=${database}
+      - DB_SERVER_URL=mongo:27017
+    depends_on: 
+      - mongo
 
   optimusServices:
     image: testvagrant/optimus-services
     ports:
-      - "8090:8090"
+      - "8090:8093"
+    environment: 
+      - database=${database}
+      - uri=mongodb://mongo:27017
+      - port=8093
     restart: always
     depends_on:
         - mongo
@@ -56,7 +87,7 @@ services:
     environment:
       - DE_ENV=production
       - DB_SERVER_URL=mongo:27017
-      - DB_NAME=optimus?authSource=admin
+      - DB_NAME=${database}?authSource=admin
     restart: always
     depends_on:
         - mongo
