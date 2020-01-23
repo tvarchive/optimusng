@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group 'com.testvagrant.sample'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.testng', name: 'testng', version: '7.0.0'
+    implementation 'com.testvagrant.optimuscloud:java-client:1.0.0'
+    implementation 'com.testvagrant.optimuscloud:testng-dashboard:1.0.0'
+}
+
+tasks.withType(Test) {
+    systemProperties = [
+        screenshot: System.getProperty("screenshot", "false"),
+        serviceUrl: System.getProperty("serviceUrl","http://192.168.1.24:8090/v1"),
+        "optimus-cloud": System.getProperty("optimus-cloud", "http://192.168.1.24:6889")
+    ]
+}
+
+task runTests(type: Test) {
+    outputs.upToDateWhen {false}
+    useTestNG() {
+        testLogging.showStandardStreams = true
+        testLogging.showStandardStreams = true
+        reports.html.enabled = false
+        useDefaultListeners = true
+        parallel 'methods'
+        listeners.add "com.testvagrant.optimuscloud.dashboard.testng.listener.OptimusSuiteListener"
+        listeners.add "com.testvagrant.optimuscloud.dashboard.testng.listener.OptimusTestListener"
+    }
+}

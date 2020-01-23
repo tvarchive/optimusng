@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id "com.testvagrant.optimuscloud.plugin" version "1.0.0"
+}
+
+group 'com.testvagrant.optimuscloud'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+//Execution rules
+tasks.runDistribution.dependsOn 'clean', 'build','reserveBuild'
+tasks.build.mustRunAfter 'clean'
+tasks.reserveBuild.mustRunAfter 'build'
+tasks.runDistribution.finalizedBy 'unReserveBuild'
+tasks.unReserveBuild.finalizedBy 'distributionReport'
+
+repositories {
+    mavenCentral()
+}
+
+optimus {
+    glue = "com.testvagrant.optimuscloud.steps"
+    classpath = sourceSets.test.runtimeClasspath
+    tags = System.getProperty("tags", "not @wip")
+}
+
+project.ext.cukeversion = "4.8.1"
+
+dependencies {
+    implementation "io.cucumber:cucumber-java:${project.cukeversion}"
+    implementation "io.cucumber:cucumber-java8:${project.cukeversion}"
+    implementation "io.cucumber:cucumber-junit:${project.cukeversion}"
+    implementation "io.cucumber:cucumber-core:${project.cukeversion}"
+    implementation "io.cucumber:cucumber-picocontainer:${project.cukeversion}"
+    implementation "com.testvagrant.optimuscloud:java-client:1.0.0"
+    implementation "com.testvagrant.optimuscloud:optimus-monitor:1.0.0"
+    implementation "com.testvagrant.optimuscloud:cucumber-dashboard:1.0.0"
+
+    testImplementation "junit:junit:4.12"
+}
+

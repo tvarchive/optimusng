@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="917980c2-300d-4eca-8fc4-723e93ba2b97" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WNFvXUAkKIksJFaSgQ2AEUT64O" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.MobileTest.shouldDisplayWelcomeMessage2">
+    <configuration name="MobileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="optimuscloudexample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testvagrant.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testvagrant.sample" />
+      <option name="MAIN_CLASS_NAME" value="com.testvagrant.sample.MobileTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileTest.shouldDisplayWelcomeMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="optimuscloudexample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testvagrant.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.testvagrant.sample" />
+      <option name="MAIN_CLASS_NAME" value="com.testvagrant.sample.MobileTest" />
+      <option name="METHOD_NAME" value="shouldDisplayWelcomeMessage" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.SuiteListener" />
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.TestListener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileTest.shouldDisplayWelcomeMessage1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="optimuscloudexample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testvagrant.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.testvagrant.sample" />
+      <option name="MAIN_CLASS_NAME" value="com.testvagrant.sample.MobileTest" />
+      <option name="METHOD_NAME" value="shouldDisplayWelcomeMessage1" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.TestListener" />
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.SuiteListener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileTest.shouldDisplayWelcomeMessage2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="optimuscloudexample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testvagrant.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.testvagrant.sample" />
+      <option name="MAIN_CLASS_NAME" value="com.testvagrant.sample.MobileTest" />
+      <option name="METHOD_NAME" value="shouldDisplayWelcomeMessage2" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Doptimus-cloud=http://192.168.1.13:6889 -DserviceUrl=http://192.168.1.13:8090/v1" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.OptimusSuiteListener" />
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.OptimusTestListener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="SUITE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.TestListener" />
+        <listener class="com.testvagrant.optimuscloud.dashboard.testng.listener.SuiteListener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.MobileTest" />
+      <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage" />
+      <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage2" />
+      <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage2" />
+        <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage" />
+        <item itemvalue="TestNG.MobileTest.shouldDisplayWelcomeMessage1" />
+        <item itemvalue="TestNG.MobileTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="917980c2-300d-4eca-8fc4-723e93ba2b97" name="Default Changelist" comment="" />
+      <created>1578982376380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578982376380</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/testvagrant/optimuscloud/testngdashboard/1.0.0/testngdashboard-1.0.0-sources.jar!/com/testvagrant/optimuscloud/dashboard/testng/listener/TestListener.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
